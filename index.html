@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <main class="w-3/4 mx-auto mt-5">
+        <section class="md:grid grid-cols-2 gap-12">
+            <div class="space-y-3">
+                <h1 class="text-3xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p class="mt-4 font-light text-sm text-justify">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memeory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English</p>
+            </div>
+
+            <div class="row-span-3">
+                <img src="mac.png" alt="">
+            </div>
+
+            <!-- Memory Field  -->
+            <div>
+               <div class="mt-4">
+                <h4 class="font-medium">Memory</h4>
+                <button id="memory-minus" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400 mt-2">8GB unified memory</button>
+                <button id="memory-plus" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400">16GB unified memory</button>
+               </div>
+
+            <!-- Storage  -->
+            <div class="mt-4">
+                <h4 class="font-medium">Storage</h4>
+                <button id="default-storage" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400 mt-2">256GB SSD storage</button>
+                <button id="storage-plus" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400">512GB SSD storage</button>
+                <button id="storage-plus-new" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400">1TB SSD storage</button>
+            </div>
+
+            <!-- Delivery  -->
+            <div class="mt-4">
+                <h4 class="font-medium">Choose your delivery option</h4>
+                <button id="free-cost" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400 mt-2">Friday, Aug 25 FREE prime Delivery</button>
+                <button id="delivery-charge" class="px-2 hover:bg-gray-400 text-sm rounded border border-gray-400">Friday, Aug 21 Delivery charge $20</button>
+            </div>
+
+            
+            <!-- Pricing -->
+            <div class="flex mt-12">
+                <div>
+                    <h3 class="font-medium">Best Price</h3>
+                    <h3 class="font-medium">Extra Memory Cost</h3>
+                    <h3 class="font-medium">Extra Storage Cost</h3>
+                    <h3 class="font-medium">Delivery Charge</h3>
+                    <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                    <h3 class="font-medium">Total Price</h3>
+                </div>
+    
+                <div class="px-20">
+                    <h3 class="font-medium">$1299</h3>
+                    <h3 class="font-medium">$<span id="memory-total">0</span></h3>
+                    <h3 class="font-medium">$<span id="storage-total">0</span></h3>
+                    <h3 class="font-medium">$<span id="charge-total">0</span></h3>
+                    <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                    <h3 class="font-medium">$<span id="total-price">1299</span></h3>
+                </div>
+            </div>
+
+            <!-- Promo code  -->
+                <div class="mt-12">
+                    <h4 class="font-medium">Add Promo Code:</h4>
+                    <input id="promo-code" class="border rounded border-gray-500 focus:outline-none mt-2 p-2" type="text">
+                    <button onclick="promoCode()" class="bg-red-800 hover:bg-gray-900 text-white rounded p-2">Apply</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="mb-10">
+            <h4 class="text-3xl font-medium text-center mt-5">Total: $<span id="total">1299</span></h4>
+        </div>
+    </main>
+    <!-- javascript  -->
+    <script src="js/app.js"></script>
+</body>
+</html>
